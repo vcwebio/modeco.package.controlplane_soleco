@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 
-prefix="package_controlplane_swareco_$2"
+prefix="package_controlplane_soleco_$2"
 

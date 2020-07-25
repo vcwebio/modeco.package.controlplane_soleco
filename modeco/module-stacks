@@ -1,3 +1,3 @@
-boot/shutdown,controlplane_swareco,controlplane_swareco,controlplane_swareco
-start/stop,controlplane_swareco,controlplane_swareco,controlplane_swareco
+boot/shutdown,controlplane_soleco,controlplane_soleco,controlplane_soleco
+start/stop,controlplane_soleco,controlplane_soleco,controlplane_soleco
 

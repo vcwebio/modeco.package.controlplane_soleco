@@ -15,7 +15,7 @@ COPY ./ /conteco/repo/
 ENV CONTECO_REALM="vcwebio" \
     CONTECO_ECOSYSTEM="modeco" \
     CONTECO_TYPE="package" \
-    CONTECO_NAME="controlplane_swareco" \
+    CONTECO_NAME="controlplane_soleco" \
     CONTECO_TAG="v1.0.0" \
     CONTECO_BASE="image.wrapper" \
     CONTECO_BUILD="modeco"
@@ -23,11 +23,11 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
       io.vcweb.ecosystem="modeco" \
       io.vcweb.type="package" \
-      io.vcweb.name="controlplane_swareco" \
+      io.vcweb.name="controlplane_soleco" \
       io.vcweb.tag="v1.0.0" \
       io.vcweb.base="image.wrapper" \
       io.vcweb.build="modeco" \
-      io.vcweb.label="package.controlplane_swareco - ModEco" \
-      io.vcweb.description="The SwarEco controlplane API module package." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/modeco.package.controlplane_swareco --help"
+      io.vcweb.label="package.controlplane_soleco - ModEco" \
+      io.vcweb.description="The SolEco controlplane API module package." \
+      io.vcweb.docker.cmd.help="docker run vcwebio/modeco.package.controlplane_soleco --help"
 ##### END modeco/Dockerfile/env-labels-footer #####

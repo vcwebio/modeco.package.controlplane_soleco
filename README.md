@@ -1,8 +1,8 @@
-# `package.controlplane_swareco` - ModEco
+# `package.controlplane_soleco` - ModEco
 
-The SwarEco controlplane API package.  
+The SolEco controlplane API package.  
 See `conteco.docs.overview` for more information on the ModEco ecosystem.
 
 ## Description
 
-SwarEco controlplane API package.
+SolEco controlplane API package.

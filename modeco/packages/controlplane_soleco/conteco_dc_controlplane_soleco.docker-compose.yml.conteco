@@ -1,0 +1,25 @@
+---
+version: '3'
+services:
+
+# START SERVICE controlplane.soleco
+  controlplane:
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.controlplane.soleco:v2.0.9
+    environment: [${CONTECO_DC_CONTROLPLANE_SOLECO_ENVIRONMENT}]
+    command: [${CONTECO_DC_CONTROLPLANE_SOLECO_COMMAND}]
+    volumes: ['/etc:/hostfs/etc:ro','/var/run/docker.sock:/var/run/docker.sock','controlplane_repos_${CONTECO_DC_GLOBAL_STACKNAMES}:/conteco/pwd']
+    ports: []
+    networks: []
+    deploy:
+      mode: ${CONTECO_DC_CONTROLPLANE_SOLECO_DEPLOY_MODE}
+      resources:
+        limits:
+          memory: '${CONTECO_DC_CONTROLPLANE_SOLECO_DEPLOY_RESOURCES_LIMITS_MEMORY}'
+        reservations:
+          memory: '${CONTECO_DC_CONTROLPLANE_SOLECO_DEPLOY_RESOURCES_RESERVATIONS_MEMORY}'
+${CONTECO_DC_CONTROLPLANE_SOLECO_COMPOSE_EXTENSIONS}
+# END SERVICE controlplane.soleco
+
+networks: {}
+volumes: {controlplane_repos_${CONTECO_DC_GLOBAL_STACKNAMES}: { external: true }}
+${CONTECO_DC_GLOBAL_COMPOSE_EXTENSIONS}
