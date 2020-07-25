@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+export CONTECO_LABEL="package.controlplane_swareco - ModEco"
+export CONTECO_DESCRIPTION="The SwarEco controlplane API module package."
+
+export CONTECO_TYPE="package"
+export CONTECO_NAME="controlplane_swareco"
+export CONTECO_TAG="v1.0.0"
+
+
+export CONTECO_BASE="image.wrapper"
+export CONTECO_BUILD="modeco"
+
+export MODECO_PACKAGE_UPDATE="latest"
